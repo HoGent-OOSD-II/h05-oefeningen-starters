@@ -67,7 +67,7 @@ public class SimonScherm extends GridPane {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Fout in reeks!");
         alert.setHeaderText(String.format("Voor kleur %d klikte je op %s in plaats van %s",
-                dc.geefAantalgeradenKleuren() + 1, gekozenKleur, gemisteKleur));
+                dc.geefAantalGeradenKleuren() + 1, gekozenKleur, gemisteKleur));
         alert.setContentText(String.format("Dit was de reeks: %s", dc.geefKleurenreeks()));
         alert.showAndWait();
         Platform.exit();
@@ -76,7 +76,7 @@ public class SimonScherm extends GridPane {
     private void alertKleurJuistGeraden() {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Succes!");
-        int aantalGeraden = dc.geefAantalgeradenKleuren();
+        int aantalGeraden = dc.geefAantalGeradenKleuren();
         alert.setHeaderText(String.format("Je bent reeds %d kleur%s ver.", aantalGeraden,
                 aantalGeraden > 1 || aantalGeraden == 0 ? "en" : ""));
         alert.setContentText("We voegen nog een kleur toe aan de reeks...");
