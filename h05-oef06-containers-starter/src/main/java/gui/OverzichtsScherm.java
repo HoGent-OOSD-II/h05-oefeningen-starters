@@ -76,7 +76,7 @@ public class OverzichtsScherm extends BorderPane {
 
     public void show() {
         // TODO enable het menu "Sorteren"
-        
+
         this.setCenter(overzichtsPane);
         toonContainers(gekozenSortering);
     }
@@ -120,7 +120,7 @@ public class OverzichtsScherm extends BorderPane {
 
     private Parent maakToevoegController() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/ToevoegView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/ToevoegScherm.fxml"));
             loader.setControllerFactory(type -> {
                 try {
                     if (type == ToevoegController.class) {

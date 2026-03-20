@@ -2,9 +2,8 @@ package gui;
 
 import domein.DomeinController;
 import javafx.scene.control.Alert;
-import javafx.scene.layout.GridPane;
 
-public class ToevoegController extends GridPane {
+public class ToevoegController {
     private DomeinController dc;
     private OverzichtsScherm overzichtsScherm;
 
